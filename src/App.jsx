@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PlusCircle, Database, Trash2, Smartphone, Monitor, Loader2 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { initializeApp } from 'firebase/app';
 import { 
   getAuth, 
@@ -248,6 +249,7 @@ export default function App() {
           )}
         </div>
       </main>
+      <Analytics />
     </div>
   );
 }
